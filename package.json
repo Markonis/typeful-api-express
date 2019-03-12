@@ -1,6 +1,6 @@
 {
   "name": "typeful-api-express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An implementation of the typeful-api ApiMounter interface for express.",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
