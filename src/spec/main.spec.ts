@@ -1,6 +1,6 @@
 import express from 'express';
 import ExpressApiMounter from '../api/main';
-import { setPaths, ApiEnpoint } from 'typeful-api';
+import { setPaths, ApiEndpoint } from 'typeful-api';
 import { use, assert, request } from 'chai';
 import chaiHttp from 'chai-http';
 import bodyParser from 'body-parser';
@@ -19,7 +19,7 @@ describe('ExpressApiMounter', () => {
 
   const api = setPaths({
     test: {
-      hello: new ApiEnpoint<TestPayload, TestPayload>()
+      hello: new ApiEndpoint<TestPayload, TestPayload>()
     }
   });
 

@@ -7,8 +7,7 @@
   "scripts": {
     "test": "mocha -r ts-node/register src/spec/**/*.spec.ts",
     "build": "tsc",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test"
+    "prepublishOnly": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -27,7 +26,7 @@
   "homepage": "https://github.com/Markonis/typeful-api-express#readme",
   "peerDependencies": {
     "express": "^4.16.4",
-    "typeful-api": "^1.0.0"
+    "typeful-api": "^2.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
@@ -41,7 +40,7 @@
     "express": "^4.16.4",
     "mocha": "^6.0.2",
     "ts-node": "^8.0.3",
-    "typeful-api": "^1.0.0",
+    "typeful-api": "^2.0.0",
     "typescript": "^3.3.3333"
   }
 }

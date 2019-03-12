@@ -1,11 +1,11 @@
 import { Router, RequestHandler } from 'express';
-import { ApiMounter, ApiEnpoint, ApiHandler, resolvePath } from 'typeful-api';
+import { ApiMounter, ApiEndpoint, ApiHandler, resolvePath } from 'typeful-api';
 
 export default class ExpressApiMounter implements ApiMounter {
   constructor(public readonly router: Router) { }
 
   mountHandler<TInput, TOutput>(
-    endpoint: ApiEnpoint<TInput, TOutput>,
+    endpoint: ApiEndpoint<TInput, TOutput>,
     handler: ApiHandler<TInput, TOutput>): void {
 
     this.router.post(endpoint.pathStr(), async (req, res) => {
