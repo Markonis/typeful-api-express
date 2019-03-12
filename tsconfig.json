@@ -1,16 +1,16 @@
 {
-	"compilerOptions": {
-		"target": "es5",
-		"module": "commonjs",
-		"outDir": "./dist",
-		"declaration": true,
-		"strict": true,
-		"esModuleInterop": true
-	},
-	"include": [
-		"./src/api/*.ts"
-	],
-	"exclude": [
-		"./src/spec/*"
-	]
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "declaration": true,
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "./src/api/*.ts"
+  ],
+  "exclude": [
+    "./src/spec/*"
+  ]
 }
