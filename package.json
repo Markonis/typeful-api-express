@@ -25,6 +25,10 @@
     "url": "https://github.com/Markonis/typeful-api-express/issues"
   },
   "homepage": "https://github.com/Markonis/typeful-api-express#readme",
+  "peerDependencies": {
+    "express": "^4.16.4",
+    "typeful-api": "^1.0.0"
+  },
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/chai-http": "^4.2.0",
